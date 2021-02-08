@@ -43,8 +43,8 @@ jobs:
       command: test
       projects: ./test/Microsoft.Azure.WebJobs.Extensions.Kafka.UnitTests
 
-  - task: ms.vss-governance-buildtask.governance-build-task-component-detection.ComponentGovernanceComponentDetection@0
-    displayName: 'Component Detection'
+  # - task: ms.vss-governance-buildtask.governance-build-task-component-detection.ComponentGovernanceComponentDetection@0
+  #   displayName: 'Component Detection'
 
   - task: Bash@3
     displayName: 'Start kafka in single node'
