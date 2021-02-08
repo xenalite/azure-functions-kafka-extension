@@ -41,7 +41,11 @@ namespace Microsoft.Azure.WebJobs.Extensions.Kafka
         /// Gets or sets the consumer group
         /// </summary>
         public string ConsumerGroup { get; set; }
-        
+
+        /// <summary>
+        /// Gets or sets the offset
+        /// </summary>
+        public string AutoOffsetReset { get; set; } = "earliest";
 
         /// <summary>
         /// Gets or sets the Avro schema.

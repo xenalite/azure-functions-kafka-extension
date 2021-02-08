@@ -77,6 +77,12 @@ namespace Microsoft.Azure.WebJobs.Extensions.Kafka
         public string ConsumerGroup { get; set; }
 
         /// <summary>
+        /// Gets or sets the offset.
+        /// </summary>
+        /// <value>The offset.</value>
+        public AutoOffsetReset AutoOffsetReset { get; set; }
+
+        /// <summary>
         /// Path to CA certificate file for verifying the broker's certificate.
         /// ssl.ca.location in librdkafka
         /// </summary>
