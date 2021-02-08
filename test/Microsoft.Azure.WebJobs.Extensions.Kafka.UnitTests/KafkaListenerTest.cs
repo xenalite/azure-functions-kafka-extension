@@ -323,7 +323,8 @@ namespace Microsoft.Azure.WebJobs.Extensions.Kafka.UnitTests
                 SslKeyPassword = "password1",
                 SslCertificateLocation = "path/to/cert",
                 SslKeyLocation = "path/to/key",
-                SslCaLocation = "path/to/cacert"
+                SslCaLocation = "path/to/cacert",
+                AutoOffsetReset = AutoOffsetReset.Earliest
             };
 
             var kafkaOptions = new KafkaOptions();
@@ -374,6 +375,7 @@ namespace Microsoft.Azure.WebJobs.Extensions.Kafka.UnitTests
                 SaslPassword = "mypassword",
                 SaslUsername ="myusername",
                 SecurityProtocol = SecurityProtocol.SaslSsl,
+                AutoOffsetReset = AutoOffsetReset.Earliest
             };
 
             var kafkaOptions = new KafkaOptions();
